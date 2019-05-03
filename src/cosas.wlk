@@ -27,3 +27,43 @@ object plancha {
 	method esComida() { return false }
 	method esElectrodomestico() { return true }	
 }
+object milanesa {
+	method precio() = 260
+	method esComida() = true
+	method esElectrodomestico() = false	
+}
+object salsaDeTomate{
+	method precio() = 90
+	method esComida() = true
+	method esElectrodomestico() = false
+}
+object microondas{
+	method precio() = 4200
+	method esComida() = false
+	method esElectrodomestico() = true
+}
+object cebolla{
+	method precio() = 25
+	method esComida() = true
+	method esElectrodomestico() = false
+}
+object compu{
+	method precio() = dolar.precioDeVenta() * 500
+	method esComida() = false
+	method esElectrodomestico() = true
+}
+object dolar{
+	method precioDeVenta() = 45
+	method precioDeCompra() = 43
+	method precioParaJoaquin() = 10
+}
+object packComida{
+	method comer(plato,aderezo){
+		return plato.precio() + aderezo.precio() 
+	}
+}
+
+
+
+
+

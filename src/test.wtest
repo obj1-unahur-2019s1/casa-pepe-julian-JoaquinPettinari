@@ -1,0 +1,11 @@
+import casa.*
+import cosas.*
+
+test "testX" {
+	casaDePepeYJulian.comprar(paqueteDeFideos)
+ 	casaDePepeYJulian.comprar(tiraDeAsado)
+ 	casaDePepeYJulian.comprar(heladera)
+ 	casaDePepeYJulian.comprar(cama)
+	assert.equals(true, casaDePepeYJulian.esDerrochona())
+
+}
